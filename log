@@ -33,3 +33,9 @@ Fri May 13 15:29:57 UTC 2022:
  tests:  2|4
 total_score: 15/70
 eadd1f9
+Fri May 13 15:59:36 UTC 2022: 
+ sudoku.c | 45 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 45 insertions(+)
+ tests:  5|3
+total_score: 35/70
+a97a044

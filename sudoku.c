@@ -44,8 +44,53 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-
-    return 1;
+  int i;
+  int j;
+  int numero;
+  int *d;
+  for(i=0;i<9;i++)
+  {
+    d=(int*)calloc(10,sizeof(int));
+    for(j=0;j<9;j++)
+    {
+      numero=n->sudo[i][j];
+      if(numero==0)
+      {
+        continue;
+      }
+      if(d[numero]==1)
+      {
+        return 0;
+      }
+      else
+      {
+        d[numero]=1;
+      }
+    }
+  }
+  
+  for(i=0;i<9;i++)
+  {
+    d=(int*)calloc(10,sizeof(int));
+    for(j=0;j<9;j++)
+    {
+      numero=n->sudo[j][i];
+      if(numero==0)
+      {
+        continue;
+      }
+      if(d[numero]==1)
+      {
+        return 0;
+      }
+      else
+      {
+        d[numero]=1;
+      }
+    }
+  }
+  
+  return 1;
 }
 
 
