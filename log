@@ -1,0 +1,11 @@
+Fri May 13 15:17:22 UTC 2022: 
+ sudoku.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:56:7: error: unused variable ‘numero’ [-Werror=unused-variable]
+   int numero;
+       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0b8c97d
