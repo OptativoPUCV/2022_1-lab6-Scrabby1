@@ -53,6 +53,7 @@ List* get_adj_nodes(Node* n){
   List* list=createList();
   int i;
   int j;
+  int numeroPosible = 1;
   for(i=0;i<9;i++)
     {
       for(j=0;j<9;j++)
@@ -60,7 +61,13 @@ List* get_adj_nodes(Node* n){
           if(n->sudo[i][j]==0)
           {
             Node *adj_n=copy(n);
-            pushBack(list,adj_n);
+            while(numeroPosible<=9)
+            {
+              adj_n->sudo[i][j]=numeroPosible;
+              pushBack(list,adj_n);
+              numeroPosible++;
+            }
+            return list;
           }
         }
     }
