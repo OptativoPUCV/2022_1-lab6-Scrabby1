@@ -9,3 +9,9 @@ sudoku.c:56:7: error: unused variable ‘numero’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0b8c97d
+Fri May 13 15:17:31 UTC 2022: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+0f0e903
