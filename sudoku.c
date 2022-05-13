@@ -60,9 +60,9 @@ List* get_adj_nodes(Node* n){
         {
           if(n->sudo[i][j]==0)
           {
-            Node *adj_n=copy(n);
             while(numeroPosible<=9)
             {
+              Node *adj_n=copy(n);
               adj_n->sudo[i][j]=numeroPosible;
               pushBack(list,adj_n);
               numeroPosible++;
